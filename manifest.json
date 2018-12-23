@@ -1,0 +1,14 @@
+{
+  "name": "Steam Video Controls",
+  "version": "0.1",
+  "description": "Default Chrome video controls for Steam videos",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://store.steampowered.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "manifest_version": 2
+}
